@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="shift_jis">
 		<title></title>
 	</head>
 	<body>	
@@ -11,11 +11,11 @@
 	var video = document.getElementById("video");
 	var medias = { audio:false, video:{}};
 	navigator.mediaDevices.getUserMedia(medias).then(function(stream) {
-		//@video.srcObject ‚ÉƒXƒgƒŠ[ƒ€‚ğ“ü‚ê‚Ü‚·B
+		//ã€€video.srcObject ã«ã‚¹ãƒˆãƒªãƒ¼ãƒ ã‚’å…¥ã‚Œã¾ã™ã€‚
 		video.srcObject = stream;
 	}).catch(function(err) {
-		// ƒJƒƒ‰‚ğ‹–‰Â‚µ‚Ä‚­‚¾‚³‚¢B
-		window.alert("ƒJƒƒ‰‚Ìg—p‚ª‹–‰Â‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½");
+		// ã‚«ãƒ¡ãƒ©ã‚’è¨±å¯ã—ã¦ãã ã•ã„ã€‚
+		window.alert("ã‚«ãƒ¡ãƒ©ã®ä½¿ç”¨ãŒè¨±å¯ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸ");
 	});                
 </script>
 	</body>
