@@ -13,6 +13,7 @@
 	navigator.mediaDevices.getUserMedia(medias).then(function(stream) {
 		//　video.srcObject にストリームを入れます。
 		video.srcObject = stream;
+		alert("test1");
 	}).catch(function(err) {
 		// カメラを許可してください。
 		window.alert("カメラの使用が許可されませんでした");
